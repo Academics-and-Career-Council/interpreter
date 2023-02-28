@@ -11,6 +11,7 @@ on:
       - v*
 
   # Run tests 
+  pull_request:
     branches:
       - release/stable
 
