@@ -14,7 +14,7 @@ from get_cpi_ap.main import get_cpi_ap
 app = Flask(__name__)
 
 
-@app.route("/uploader", methods=["GET", "POST"])
+@app.route("/uploader", methods=["POST"])
 def upload_file():
     if request.method == "POST":
         f = request.files["file"]
